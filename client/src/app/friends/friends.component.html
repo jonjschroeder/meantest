@@ -1,0 +1,14 @@
+<button (click)= "_friendsService.showPage()">Show</button>
+<button (click)= "_friendsService.editPage()">Edit</button>
+<button (click)= "_friendsService.newPage()">New</button>
+
+
+<div *ngIf = "_friendsService.showpage">
+<app-friends-show></app-friends-show>
+</div>
+<div *ngIf = "_friendsService.newpage">
+  <app-friends-new></app-friends-new>
+</div>
+<div *ngIf = "_friendsService.editpage">
+  <app-friends-edit></app-friends-edit>
+</div>
